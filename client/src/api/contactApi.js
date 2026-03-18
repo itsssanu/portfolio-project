@@ -1,5 +1,5 @@
 export const sendContactMail = async (formData) => {
-  const res = await fetch("http://localhost:5000/api/send-mail", {
+  const res = await fetch("https://portfolio-api.onrender.com/api/send-mail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
