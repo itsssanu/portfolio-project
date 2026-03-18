@@ -10,7 +10,7 @@ export const portfolioData = {
     socials: {
       github: "https://github.com/anupriya",
       linkedin: "https://linkedin.com/in/anupriya-p",
-      portfolio: "https://anupriya-portfolio.com"
+      portfolio: "/anupriya-resume.pdf",
     }
   },
   
@@ -146,7 +146,7 @@ export const portfolioData = {
       "REST APIs", "Axios", "Fetch API", "Playwright", "Postman"
     ],
     uiLibraries: [
-      "Ant Design", "Material UI", "Bootstrap", "Shadcn UI"
+      "Ant Design", "Material UI", "Bootstrap"
     ],
     tools: [
       "Git", "GitHub", "VS Code", "Cursor", "NPM", "Webpack", "Babel", "Vite"
@@ -155,7 +155,7 @@ export const portfolioData = {
       "Figma", "Adobe XD", "Canva", "UX Design Principles", "WCAG Standards"
     ],
     ai: [
-      "Socket.io", "WebSockets", "AI/ML Integration", "LLM APIs", "Real-time Communication"
+      "Socket.io", "WebSockets", "AI Integration", "Real-time Communication"
     ]
   },
   

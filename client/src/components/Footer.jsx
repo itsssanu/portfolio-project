@@ -25,7 +25,7 @@ const Footer = ({ data }) => {
               &lt;AP /&gt;
             </button>
             <p className="text-slate-400 text-sm">
-              Built with <Heart size={14} className="inline text-orange-500" fill="currentColor" /> using React & Tailwind CSS
+              Crafted with <Heart size={14} className="inline text-orange-500" fill="currentColor" /> modern React UI & a Node.js-powered Contact API
             </p>
           </div>
 
@@ -58,10 +58,9 @@ const Footer = ({ data }) => {
             </a>
             <a
               href={data.socials.portfolio}
-              target="_blank"
-              rel="noopener noreferrer"
+              download
               className="text-slate-400 hover:text-teal-400 transition-all duration-300 hover:scale-110"
-              aria-label="Portfolio"
+              aria-label="Download Resume"
             >
               <FileText size={20} />
             </a>
