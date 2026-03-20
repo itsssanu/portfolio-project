@@ -129,7 +129,7 @@ const Hero = ({ data }) => {
                 <Linkedin size={24} />
               </a>
               <a
-                href={`mailto:${data.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${data.email}`}
                 className="text-slate-400 hover:text-teal-400 transition-all duration-300 hover:scale-110"
                 aria-label="Email"
               >
