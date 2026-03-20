@@ -1,12 +1,12 @@
 const nodemailer = require("nodemailer");
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+const transporter = nodemailer.createTransporter({
+  host: "smtp.resend.com",
   port: 465,
-  secure: true,          // use SSL
+  secure: true,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: "resend",
+    pass: process.env.RESEND_API_KEY,  // Change from EMAIL_PASS
   },
 });
 
