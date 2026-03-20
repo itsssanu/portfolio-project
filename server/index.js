@@ -6,10 +6,7 @@ const mailRoutes = require("./routes/mailRoutes");
 
 const app = express();
 
-app.use(cors({
-  origin: "*", // allow all (for now)
-}));
-
+app.use(cors());
 app.use(express.json());
 
 app.use("/api", mailRoutes);
