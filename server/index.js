@@ -28,7 +28,7 @@ const sendEmail = async (mailOptions) => {
 // Send mail endpoint
 app.post("/api/send-mail", async (req, res) => {
   const { name, email, subject, message } = req.body;
-  
+
   try {
     const result = await sendEmail({
       from: process.env.FROM_EMAIL || 'onboarding@resend.dev',
@@ -37,15 +37,11 @@ app.post("/api/send-mail", async (req, res) => {
       subject: `Portfolio: ${subject}`,
       html: `
         <div style="font-family: Arial; padding: 20px;">
-          <h2>New Contact Form</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Subject:</strong> ${subject}</p>
-          <p><strong>Message:</strong><br>${message}</p>
+           <p style="white-space: pre-line;">${message}</p>
         </div>
       `,
     });
-    
+
     console.log('Resend response:', result);
     res.json({ success: true, message: 'Email sent!' });
   } catch (error) {
