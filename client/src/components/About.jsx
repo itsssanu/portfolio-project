@@ -106,7 +106,7 @@ const About = ({ data }) => {
                   </div>
 
                   {/* Typing Content */}
-                  <div className="text-slate-300 leading-relaxed text-base">
+                  <div className="text-slate-300 leading-relaxed md:text-base text-sm">
                     <TypingText />
                   </div>
                 </div>
@@ -138,7 +138,7 @@ const About = ({ data }) => {
               </div>
 
               <div className="mt-6 flex flex-wrap gap-2">
-                {["React.js", "Redux", "JavaScript", "Tailwind CSS", "Claude Code", "Cursor", "Copilot", "Git"].map((skill) => (
+                {["React.js", "Redux", "JavaScript", "Socket.io", "Tailwind CSS", "Ant Design", "Figma", "Cursor", "Copilot", "Git"].map((skill) => (
                   <span
                     key={skill}
                     className="px-4 py-2 bg-slate-800 text-teal-400 rounded-full text-sm border border-slate-700 hover:bg-teal-500/10 transition"
