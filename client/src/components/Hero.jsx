@@ -72,7 +72,7 @@ const Hero = ({ data }) => {
             </h2>
 
             <p
-              className="text-slate-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 transition-all duration-500 delay-500"
+              className="text-slate-400 text-base sm:text-lg md:text-lg max-w-2xl mx-auto mb-8 transition-all duration-500 delay-500"
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(20px)'

@@ -137,7 +137,7 @@ export const portfolioData = {
   skills: {
     frontend: [
       "React.js", "Next.js", "JavaScript (ES6+)", "HTML5", "CSS3", "SCSS",
-      "Tailwind CSS", "Bootstrap", "Responsive Design", "Flexbox", "Grid"
+      "Tailwind CSS", "Bootstrap", "Flexbox", "Grid", "Responsive Design"
     ],
     stateManagement: [
       "React Hooks", "Redux Toolkit", "Context API", "React Router"

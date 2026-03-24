@@ -89,7 +89,7 @@ const CSS = `
   @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @keyframes fadeSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
   @keyframes pulseDot{0%,100%{opacity:1}50%{opacity:.3}}
-  .font-syne{font-family:'Syne',sans-serif}
+  .font-syne{font-family:'inter',sans-serif}
   .font-mono-c{font-family:'Space Mono',monospace}
   .animate-ticker{animation:ticker 22s linear infinite}
   .animate-fade-slide{animation:fadeSlide .45s cubic-bezier(.23,1,.32,1) forwards}
@@ -111,14 +111,14 @@ const CSS = `
   .chevron-icon{transition:transform .35s cubic-bezier(.23,1,.32,1)}
   .client-badge{
     display:inline-flex;align-items:center;gap:5px;
-    font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;
+    font-family:'Poppins', serif;font-size:9px;letter-spacing:.15em;
     text-transform:uppercase;padding:5px 10px;
     border:1px solid rgba(255,95,31,.35);color:rgba(255,95,31,.8);
     border-radius:3px;background:rgba(255,95,31,.07);white-space:nowrap;
   }
   .personal-tag{
     display:inline-flex;align-items:center;gap:5px;
-    font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;
+    font-family:'Poppins', serif;font-size:9px;letter-spacing:.15em;
     text-transform:uppercase;padding:5px 10px;
     border:1px solid rgba(45,212,191,.3);color:rgba(45,212,191,.75);
     border-radius:3px;background:rgba(45,212,191,.05);white-space:nowrap;
@@ -331,7 +331,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="font-mono-c text-[11px] text-orange-500/80 mb-3 tracking-[.05em]">// {active.tagline}</div>
-                <p className="text-[13px] text-white/45 leading-relaxed mb-5 max-w-lg">{active.description}</p>
+                <p className="text-[14px] text-white/60 leading-relaxed mb-5 max-w-lg">{active.description}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {active.technologies?.map((t, i) => (
                     <span key={i} className="font-mono-c text-[9px] tracking-widest uppercase px-2.5 py-1 bg-slate-900 border border-slate-800 text-teal-400/60 rounded-sm">{t}</span>
@@ -344,7 +344,7 @@ const Projects = () => {
                   {active.features.map((f, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <span className="font-mono-c text-teal-400/60 text-[11px] mt-0.5 shrink-0">→</span>
-                      <span className="text-[12px] text-white/40 leading-snug">{f}</span>
+                      <span className="text-[14px] text-white/60 leading-snug">{f}</span>
                     </div>
                   ))}
                 </div>
