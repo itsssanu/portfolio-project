@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Github, Linkedin, Mail, FileText, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronDown, FileDown } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Hero = ({ data }) => {
@@ -141,7 +141,7 @@ const Hero = ({ data }) => {
                 className="text-slate-400 hover:text-teal-400 transition-all duration-300 hover:scale-110"
                 aria-label="Download Resume"
               >
-                <FileText size={20} />
+                <FileDown size={20} />
               </a>
             </div>
           </div>

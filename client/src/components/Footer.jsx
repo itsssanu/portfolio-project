@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Heart, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, FileDown } from 'lucide-react';
 
 const Footer = ({ data }) => {
   const currentYear = new Date().getFullYear();
@@ -59,10 +59,11 @@ const Footer = ({ data }) => {
             <a
               href={data.socials.portfolio}
               download
+              title="Download Resume"
               className="text-slate-400 hover:text-teal-400 transition-all duration-300 hover:scale-110"
               aria-label="Download Resume"
             >
-              <FileText size={20} />
+              <FileDown  size={20} />
             </a>
           </div>
 
